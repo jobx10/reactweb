@@ -1,0 +1,156 @@
+[debug] [2024-07-12T16:10:40.231Z] ----------------------------------------------------------------------
+[debug] [2024-07-12T16:10:40.233Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2024-07-12T16:10:40.234Z] CLI Version:   13.13.1
+[debug] [2024-07-12T16:10:40.234Z] Platform:      win32
+[debug] [2024-07-12T16:10:40.234Z] Node Version:  v18.16.0
+[debug] [2024-07-12T16:10:40.235Z] Time:          Sat Jul 13 2024 00:10:40 GMT+0800 (Singapore Standard Time)
+[debug] [2024-07-12T16:10:40.235Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-12T16:10:40.323Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-12T16:10:40.324Z] > authorizing via signed-in user (jobx10mx@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\xampp\htdocs\node-express-firebase-hosting
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-07-12T16:10:42.567Z] Using project from CLI flag: web2-2
+[debug] [2024-07-12T16:10:42.570Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/web2-2 [none]
+[debug] [2024-07-12T16:10:43.804Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/web2-2 200
+[debug] [2024-07-12T16:10:43.804Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/web2-2 {"projectId":"web2-2","projectNumber":"850602378770","displayName":"web2","name":"projects/web2-2","resources":{"hostingSite":"web2-2"},"state":"ACTIVE","etag":"1_fda7e4de-1606-4c60-b204-a207e3c8cef4"}
+[info] i  Using project web2-2 (web2) 
+[info] 
+=== Hosting Setup
+[debug] [2024-07-12T16:10:43.814Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/web2-2 [none]
+[debug] [2024-07-12T16:10:45.535Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/web2-2 200
+[debug] [2024-07-12T16:10:45.535Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/web2-2 {"projectId":"web2-2","projectNumber":"850602378770","displayName":"web2","name":"projects/web2-2","resources":{"hostingSite":"web2-2"},"state":"ACTIVE","etag":"1_fda7e4de-1606-4c60-b204-a207e3c8cef4"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-07-12T16:10:58.912Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-07-12T16:10:59.250Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-07-12T16:10:59.250Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.12.3","browserURL":"https://www.gstatic.com/firebasejs/10.12.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.12.3/firebase.tgz"},"live":{"version":"10.12","browserURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.12.3/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.12.3/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.12.3/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.12.3/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.12.3/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.12.3/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.12.3/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.12.3/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.12.3/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.12.3/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js","vertexai-preview":"https://www.gstatic.com/firebasejs/10.12.3/firebase-vertexai-preview.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.memory.js"}}
+[info] i  Skipping write of build/index.html 
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[info] i  Writing project information to .firebaserc... 
+[info] 
+[info] +  Firebase initialization complete! 
+[debug] [2024-07-12T16:11:35.402Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:268:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-07-12T16:11:52.952Z] ----------------------------------------------------------------------
+[debug] [2024-07-12T16:11:52.954Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-07-12T16:11:52.955Z] CLI Version:   13.13.1
+[debug] [2024-07-12T16:11:52.955Z] Platform:      win32
+[debug] [2024-07-12T16:11:52.955Z] Node Version:  v18.16.0
+[debug] [2024-07-12T16:11:52.956Z] Time:          Sat Jul 13 2024 00:11:52 GMT+0800 (Singapore Standard Time)
+[debug] [2024-07-12T16:11:52.956Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-12T16:11:53.051Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-12T16:11:53.051Z] > authorizing via signed-in user (jobx10mx@gmail.com)
+[debug] [2024-07-12T16:11:53.051Z] [iam] checking project web2-2 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-12T16:11:53.054Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/web2-2:testIamPermissions [none]
+[debug] [2024-07-12T16:11:53.054Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/web2-2:testIamPermissions x-goog-quota-user=projects/web2-2
+[debug] [2024-07-12T16:11:53.054Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/web2-2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-12T16:11:55.214Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/web2-2:testIamPermissions 200
+[debug] [2024-07-12T16:11:55.214Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/web2-2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-12T16:11:55.215Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/web2-2 [none]
+[debug] [2024-07-12T16:11:56.297Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/web2-2 200
+[debug] [2024-07-12T16:11:56.297Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/web2-2 {"projectId":"web2-2","projectNumber":"850602378770","displayName":"web2","name":"projects/web2-2","resources":{"hostingSite":"web2-2"},"state":"ACTIVE","etag":"1_fda7e4de-1606-4c60-b204-a207e3c8cef4"}
+[info] 
+[info] === Deploying to 'web2-2'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-07-12T16:11:56.306Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/web2-2/versions [none]
+[debug] [2024-07-12T16:11:56.307Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/web2-2/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-07-12T16:11:58.758Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/web2-2/versions 200
+[debug] [2024-07-12T16:11:58.759Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/web2-2/versions {"name":"projects/850602378770/sites/web2-2/versions/f25e1f315cf2f924","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[web2-2]: beginning deploy... 
+[info] i  hosting[web2-2]: found 1 files in build 
+[debug] [2024-07-12T16:11:58.870Z] [hosting] uploading with 200 concurrency
+[debug] [2024-07-12T16:11:58.874Z] [hosting] hash cache [YnVpbGQ] stored for 1 files
+[debug] [2024-07-12T16:11:58.874Z] [hosting][hash queue][FINAL] {"max":1,"min":1,"avg":1,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2}
+[debug] [2024-07-12T16:11:58.875Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/850602378770/sites/web2-2/versions/f25e1f315cf2f924:populateFiles [none]
+[debug] [2024-07-12T16:11:58.875Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/850602378770/sites/web2-2/versions/f25e1f315cf2f924:populateFiles {"files":{"/index.html":"025250d5d17f696977edb184b360f8203c655ec2479954d94ffc6a4aada463c1"}}
+[debug] [2024-07-12T16:12:00.104Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/850602378770/sites/web2-2/versions/f25e1f315cf2f924:populateFiles 200
+[debug] [2024-07-12T16:12:00.104Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/850602378770/sites/web2-2/versions/f25e1f315cf2f924:populateFiles {"uploadRequiredHashes":["025250d5d17f696977edb184b360f8203c655ec2479954d94ffc6a4aada463c1"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/web2-2/versions/f25e1f315cf2f924/files"}
+[debug] [2024-07-12T16:12:00.105Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/web2-2/versions/f25e1f315cf2f924/files/025250d5d17f696977edb184b360f8203c655ec2479954d94ffc6a4aada463c1 [none]
+[debug] [2024-07-12T16:12:00.106Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/web2-2/versions/f25e1f315cf2f924/files/025250d5d17f696977edb184b360f8203c655ec2479954d94ffc6a4aada463c1 [stream]
+[debug] [2024-07-12T16:12:00.107Z] [hosting][populate queue][FINAL] {"max":1232,"min":1232,"avg":1232,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1234}
+[debug] [2024-07-12T16:12:00.107Z] [hosting] uploads queued: 1
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[debug] [2024-07-12T16:12:03.198Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/web2-2/versions/f25e1f315cf2f924/files/025250d5d17f696977edb184b360f8203c655ec2479954d94ffc6a4aada463c1 200
+[debug] [2024-07-12T16:12:03.198Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/web2-2/versions/f25e1f315cf2f924/files/025250d5d17f696977edb184b360f8203c655ec2479954d94ffc6a4aada463c1 [stream]
+[debug] [2024-07-12T16:12:03.198Z] [hosting][upload queue][FINAL] {"max":3094,"min":3094,"avg":3094,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":3094}
+[info] i  hosting: upload complete 
+[info] +  hosting[web2-2]: file upload complete 
+[debug] [2024-07-12T16:12:03.199Z] [hosting] deploy completed after 4346ms
+[debug] [2024-07-12T16:12:03.199Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "web2-2"
+    },
+    "version": "projects/850602378770/sites/web2-2/versions/f25e1f315cf2f924"
+  }
+]
+[info] i  hosting[web2-2]: finalizing version... 
+[debug] [2024-07-12T16:12:03.203Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/web2-2/versions/f25e1f315cf2f924 updateMask=status%2Cconfig
+[debug] [2024-07-12T16:12:03.203Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/web2-2/versions/f25e1f315cf2f924 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2024-07-12T16:12:04.500Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/web2-2/versions/f25e1f315cf2f924 200
+[debug] [2024-07-12T16:12:04.500Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/web2-2/versions/f25e1f315cf2f924 {"name":"projects/850602378770/sites/web2-2/versions/f25e1f315cf2f924","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-07-12T16:11:57.864386Z","createUser":{"email":"jobx10mx@gmail.com"},"finalizeTime":"2024-07-12T16:12:04.332353Z","finalizeUser":{"email":"jobx10mx@gmail.com"}}
+[debug] [2024-07-12T16:12:04.500Z] [hosting] finalized version for web2-2:[object Object]
+[info] +  hosting[web2-2]: version finalized 
+[info] i  hosting[web2-2]: releasing new version... 
+[debug] [2024-07-12T16:12:04.501Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/web2-2/channels/live/releases versionName=projects%2F850602378770%2Fsites%2Fweb2-2%2Fversions%2Ff25e1f315cf2f924
+[debug] [2024-07-12T16:12:04.502Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/web2-2/channels/live/releases {}
+[debug] [2024-07-12T16:12:06.372Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/web2-2/channels/live/releases 200
+[debug] [2024-07-12T16:12:06.373Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/web2-2/channels/live/releases {"name":"projects/850602378770/sites/web2-2/channels/live/releases/1720800725013000","version":{"name":"projects/850602378770/sites/web2-2/versions/f25e1f315cf2f924","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-07-12T16:11:57.864386Z","createUser":{"email":"jobx10mx@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIS1STPKtZgagf9-4kvKVrX6P1ZZ2Oib_DqvKz83ff2BWgE=mo"},"finalizeTime":"2024-07-12T16:12:04.332353Z","finalizeUser":{"email":"jobx10mx@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIS1STPKtZgagf9-4kvKVrX6P1ZZ2Oib_DqvKz83ff2BWgE=mo"}},"type":"DEPLOY","releaseTime":"2024-07-12T16:12:05.013Z","releaseUser":{"email":"jobx10mx@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIS1STPKtZgagf9-4kvKVrX6P1ZZ2Oib_DqvKz83ff2BWgE=mo"}}
+[debug] [2024-07-12T16:12:06.373Z] [hosting] release: {"name":"projects/850602378770/sites/web2-2/channels/live/releases/1720800725013000","version":{"name":"projects/850602378770/sites/web2-2/versions/f25e1f315cf2f924","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-07-12T16:11:57.864386Z","createUser":{"email":"jobx10mx@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIS1STPKtZgagf9-4kvKVrX6P1ZZ2Oib_DqvKz83ff2BWgE=mo"},"finalizeTime":"2024-07-12T16:12:04.332353Z","finalizeUser":{"email":"jobx10mx@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIS1STPKtZgagf9-4kvKVrX6P1ZZ2Oib_DqvKz83ff2BWgE=mo"}},"type":"DEPLOY","releaseTime":"2024-07-12T16:12:05.013Z","releaseUser":{"email":"jobx10mx@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIS1STPKtZgagf9-4kvKVrX6P1ZZ2Oib_DqvKz83ff2BWgE=mo"}}
+[info] +  hosting[web2-2]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/web2-2/overview
+[info] Hosting URL: https://web2-2.web.app
+[debug] [2024-07-12T16:12:12.638Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:268:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
