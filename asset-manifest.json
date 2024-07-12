@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/jobx10/reactweb/static/css/main.f855e6bc.css",
+    "main.js": "/jobx10/reactweb/static/js/main.c053ac1e.js",
+    "static/js/453.99ff3fd3.chunk.js": "/jobx10/reactweb/static/js/453.99ff3fd3.chunk.js",
+    "static/media/logo.svg": "/jobx10/reactweb/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/jobx10/reactweb/index.html",
+    "main.f855e6bc.css.map": "/jobx10/reactweb/static/css/main.f855e6bc.css.map",
+    "main.c053ac1e.js.map": "/jobx10/reactweb/static/js/main.c053ac1e.js.map",
+    "453.99ff3fd3.chunk.js.map": "/jobx10/reactweb/static/js/453.99ff3fd3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.c053ac1e.js"
+  ]
+}
